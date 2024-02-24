@@ -1,23 +1,227 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="black">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudanças Climáticas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="imagens/favicon.png">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      margin-bottom: 0px;
+    }
+
+    .navbar {
+      background-color: black !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+      color: white !important;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+
+    .navbar-light .navbar-toggler {
+      border-color: white !important;
+    }
+
+    .text-white {
+      color: white !important;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+    }
+    
+    ul{
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+  </style>
 </head>
 <body>
-    <header class="d-flex justify-content-flex-end py-3 " >
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#" >Mudanças Climáticas</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#causes">Causas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#effects">Efeitos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#solutions">Soluções</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
         </ul>
-      </header>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-2">Mudanças Climáticas</h1>
+      <p class="lead">Conscientização e ação para um futuro sustentável.</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="">Sobre as Mudanças Climáticas</h2>
+          <p>As mudanças climáticas representam uma ameaça global que afeta a todos nós. Aumento da temperatura, derretimento de geleiras e eventos climáticos extremos são sinais claros do impacto humano no clima do planeta. Entender as causas e os efeitos das mudanças climáticas é crucial para mitigar seus efeitos negativos e garantir um futuro sustentável para as próximas gerações.</p>
+        </div>
+        <div class="col-lg-6">
+          <figure class="figure">
+            <img src="imagens/imagen1.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption text-right text-white">Incêndio Florestal.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Causes Section -->
+<section id="causes" class="bg-dark py-5">
+    <div class="container">
+      <h2 class="text-center">Causas das Mudanças Climáticas</h2>
+      <p class="text-center">Algumas das principais causas incluem:</p>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>1. Emissões de CO2</h4>
+          <p>A queima de combustíveis fósseis, como carvão, petróleo e gás natural, libera grandes quantidades de dióxido de carbono na atmosfera, contribuindo para o aumento do efeito estufa e o aquecimento global.</p>
+          <figure class="figure">
+            <img src="imagens/imagen2.jpg" class="figure-img img-fluid rounded" alt="Uma fábrica queimando combustíveis.">
+            <figcaption class="figure-caption text-center text-white">Fábrica que queima combustíveis.</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <h4>2. Desmatamento</h4>
+          <p>O desmatamento, principalmente em florestas tropicais, resulta na liberação de CO2 armazenado nas árvores e na redução da capacidade do ecossistema de absorver carbono da atmosfera.</p>
+          <figure class="figure">
+            <img src="imagens/imagen3.jpg" class="figure-img img-fluid rounded" alt="Área desmatada.">
+            <figcaption class="figure-caption text-center text-white">Área desmatada.</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <h4>3. Uso de Combustíveis Fósseis</h4>
+          <p>O uso generalizado de combustíveis fósseis em transporte, indústria e geração de energia contribui significativamente para as emissões de gases de efeito estufa e, consequentemente, para as mudanças climáticas.</p>
+          <figure class="figure">
+            <img src="imagens/imagen4.jpg" class="figure-img img-fluid rounded" alt="Um protesto contra o uso de combustíveis.">
+            <figcaption class="figure-caption text-center text-white">Protesto contra o uso de combustíveis fósseis.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Effects Section -->
+  <section id="effects" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Efeitos das Mudanças Climáticas</h2>
+      <p class="text-center">Alguns dos efeitos incluem:</p>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>1. Aumento da Temperatura Global</h4>
+          <p>O aumento das temperaturas médias globais leva a eventos climáticos mais extremos, como ondas de calor, secas prolongadas e tempestades intensas, afetando negativamente ecossistemas, agricultura e saúde humana.</p>
+          <figure class="figure">
+            <img src="imagens/imagen.7.jpg" class="mt-5 figure-img img-fluid rounded " alt="Seca devido ao clima.">
+            <figcaption class="figure-caption text-center text-white">Seca devida a mudança climática.</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6">
+          <h4>2. Derretimento das Calotas Polares</h4>
+          <p>O derretimento das calotas polares e das geleiras contribui para o aumento do nível do mar, ameaçando comunidades costeiras e ecossistemas sensíveis e exacerbando os efeitos das mudanças climáticas em todo o mundo.</p>
+          <figure class="figure">
+            <img src="imagens/imagen5.jpg" class="figure-img img-fluid rounded" alt="Geleira derrendo.">
+            <figcaption class="figure-caption text-center text-white ">Derretimento de geleiras.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Solutions Section -->
+<section id="solutions" class="bg-dark py-5">
+    <div class="container">
+      <h2 class="text-center">Soluções para as Mudanças Climáticas</h2>
+      <p class="text-center">Algumas soluções incluem:</p>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li>Reduzir as Emissões de Carbono</li>
+            <li>Promover Energias Renováveis</li>
+            <li>Incentivar o Reflorestamento</li>
+            <li>Adaptar-se às Mudanças</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+            <p>Aqui estão algumas maneiras de implementar essas soluções:</p>
+            <ul>
+              <li>Reduzir as Emissões de Carbono: Investir em tecnologias limpas, como energia solar e eólica, e promover o transporte público.</li>
+              <li>Promover Energias Renováveis: Incentivar políticas que favoreçam o uso de energias renováveis em vez de combustíveis fósseis.</li>
+              <li>Incentivar o Reflorestamento: Apoiar projetos de reflorestamento e conservação de áreas naturais.</li>
+              <li>Adaptar-se às Mudanças: Desenvolver planos de adaptação para lidar com os impactos das mudanças climáticas em diferentes setores, como agricultura, saúde e infraestrutura.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Contato</h2>
+      <p class="text-center">Para entrar em contato, envie um e-mail para: <a href="#">rerisonsilvaraujo@gmail.com</a></p>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      &copy; 2024 Mudanças Climáticas
+    </div>
+    <p class="p-0">Feito por Rerison</p>
+  </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
